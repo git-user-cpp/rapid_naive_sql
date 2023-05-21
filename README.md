@@ -1,6 +1,7 @@
 # RapidNaiveSQL
 
-NaiveSQL implemented in Rust. Java version: https://github.com/VladimirPetrat/NaiveSQL
+NaiveSQL implemented in Rust.
+Java version: https://github.com/VladimirPetrat/NaiveSQL
 
 ---
 ![GitHub all releases](https://img.shields.io/github/downloads/git-user-cpp/RapidNaiveSQL/total?color=00FF00&logo=GitHub&logoColor=00FF00&style=plastic)
@@ -20,6 +21,7 @@ NaiveSQL implemented in Rust. Java version: https://github.com/VladimirPetrat/Na
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/git-user-cpp/RapidNaiveSQL?color=98FB98&logo=github&logoColor=98FB98&style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/git-user-cpp/RapidNaiveSQL?color=98FB98&logo=github&logoColor=98FB98&style=plastic)
+
 ---
 
 ## ⚠️ LICENSE ⚠️
