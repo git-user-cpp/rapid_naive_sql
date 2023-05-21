@@ -22,10 +22,5 @@
  * SOFTWARE.
  */
 
-pub mod main_module;
-use crate::main_module::data::DataObject::DataObject;
-
-fn main() {
-    let new_obj = DataObject::new("name", "Oleg");
-    println!("{:?}", new_obj);
-}
+pub mod controller;
+pub mod data;

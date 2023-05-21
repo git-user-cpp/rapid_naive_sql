@@ -22,6 +22,18 @@
  * SOFTWARE.
  */
 
+use crate::main_module::data::DataHandler::DataHandler;
+
 pub struct CreateTableHandler {
-    let dataHandler: DataHandler;
+    dataHandler: DataHandler,
+}
+
+impl CreateTableHandler {
+    pub fn new() -> Self {
+        let dataHandler = DataHandler::new();
+
+        CreateTableHandler {
+            dataHandler,
+        }
+    }
 }

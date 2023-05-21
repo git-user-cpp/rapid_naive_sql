@@ -22,13 +22,19 @@
  * SOFTWARE.
  */
 
-pub struct DataObject {
-    let fieldName = String::new();
-    let value = <T>;
-    //let valType = type::get();
+#[derive(Debug)]
 
-    pub DataObject(field: String, value: String) {
-        fieldName = field;
-        value = value;
+pub struct DataObject {
+    fieldName: String,
+    value: String,
+}
+
+impl DataObject{
+    pub fn new(field_name: &str, field_value: &str) -> Self {
+        DataObject {
+            fieldName: String::from(field_name),
+            value: String::from(field_value),
+        }
     }
 }
+

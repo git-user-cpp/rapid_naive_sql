@@ -22,20 +22,25 @@
  * SOFTWARE.
  */
 
-use std::collections::{HashSet, HashMap, List};
+use std::collections::{HashSet, HashMap};
+use crate::DataObject;
 
 pub struct Table {
-    let errorId = String::from("[ERROR] [Incorrect ID]");
-    let errorArg = String::from("[ERROR] [Incorrect rows in insert data package");
-    let errorRws = String::from("[ERROR] [Trying to reach an empty row]");
-    let columnNames: HashSet<String> = HashSet::new();
-    let rows: HashMap<String, List<DataObject>> = HashMap::new();
+    errorId: String,
+    errorArg: String,
+    errorRws: String,
+    columnNames: HashSet<String>,
+    rows: HashMap<String, Vec<DataObject>>,
+}
 
-    pub Table(columnNames: HashSet<String>) {
-        this::columnNames = columnNames;
-    }
-
-    pub fn returnTable() -> Table {
-        errorID
+impl Table {
+    pub fn new() -> Self {
+        Table {
+            errorId: String::from("[ERROR] [Incorrect ID]"),
+            errorArg: String::from("[ERROR] [Incorrect rows in insert data package"),
+            errorRws: String::from("[ERROR] [Trying to reach an empty row]"),
+            columnNames: HashSet::new(),
+            rows: HashMap::new(),
+        }
     }
 }

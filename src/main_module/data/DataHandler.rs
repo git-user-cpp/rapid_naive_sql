@@ -22,22 +22,17 @@
  * SOFTWARE.
  */
 
-use std::String;
-use std::collections::{HashMap, HashSet};
+use std::collections::HashMap;
+use crate::main_module::data::Table::Table;
 
 pub struct DataHandler {
-    //TODO add functionality regarding data operating
-    let mut tables: HashMap<String, Table>;
+    tables: HashMap<String, Table>,
+}
 
-    pub DataHandler() {
-        tables = HashMap::new();
-    }
-
-    pub createNewTable(tableName: String, columnNames: HashSet<String>) -> Table {
-        let table = Table::new(columnNames);
-    }
-
-    pub insertIntoTable(tableName: String, rowDataPackage: DataObject) {
-        let table = tables::get(tableName);
+impl DataHandler {
+    pub fn new() -> Self {
+        DataHandler {
+            tables: HashMap::new(),
+        }
     }
 }
