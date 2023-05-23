@@ -22,6 +22,6 @@
  * SOFTWARE.
  */
 
-pub mod DataHandler;
-pub mod DataObject;
-pub mod Table;
+pub mod data_handler;
+pub mod data_object;
+pub mod table;

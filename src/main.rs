@@ -23,7 +23,7 @@
  */
 
 pub mod main_module;
-use crate::main_module::data::DataObject::DataObject;
+use crate::main_module::data::data_object::DataObject;
 
 fn main() {
     let new_obj = DataObject::new("name", "Oleg");

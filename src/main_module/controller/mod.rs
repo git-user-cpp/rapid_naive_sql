@@ -22,4 +22,4 @@
  * SOFTWARE.
  */
 
-pub mod CreateTableHandler;
+pub mod create_table_handler;
