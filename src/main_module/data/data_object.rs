@@ -9,10 +9,10 @@
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -22,17 +22,19 @@
  * SOFTWARE.
  */
 
-use std::collections::HashMap;
-use crate::main_module::data::Table::Table;
+#[derive(Debug)]
 
-pub struct DataHandler {
-    tables: HashMap<String, Table>,
+pub struct DataObject {
+    field_name: String,
+    value: String,
 }
 
-impl DataHandler {
-    pub fn new() -> Self {
-        DataHandler {
-            tables: HashMap::new(),
+impl DataObject{
+    pub fn new(field_name: &str, field_value: &str) -> Self {
+        DataObject {
+            field_name: String::from(field_name),
+            value: String::from(field_value),
         }
     }
 }
+
