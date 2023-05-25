@@ -35,4 +35,12 @@ impl DataHandler {
             tables: HashMap::new(),
         }
     }
+
+    pub fn create_new_table() {
+        //TODO: implement
+    }
+
+    pub fn insert_into_table() {
+        //TODO: implement
+    }
 }

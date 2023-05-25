@@ -43,4 +43,57 @@ impl Table {
             rows: HashMap::new(),
         }
     }
+
+    //TODO: implement all these functions
+    fn generate_unique_id() {
+        //TODO: implement
+    }
+
+    fn verify_id() {
+        //TODO: implement
+    }
+
+    fn verify_field() {
+        //TODO: implement
+    }
+
+    fn verify_rows() {
+        //TODO: implement
+    }
+
+    fn verify_column_names_correct() {
+        //TODO: implement
+    }
+
+    fn verify_id_and_field() {
+        //TODO: implement
+    }
+
+    fn verify_id_and_columns() {
+        //TODO: implement
+    }
+
+    pub fn row_is_empty() {
+        //TODO: implement
+    }
+
+    pub fn get_field_value() {
+        //TODO: implement
+    }
+
+    pub fn add_row() {
+        //TODO: implement
+    }
+
+    pub fn return_row() {
+        //TODO: implement
+    }
+
+    pub fn remove_row() {
+        //TODO: implement
+    }
+
+    pub fn update_row_field_values() {
+        //TODO: implement
+    }
 }
