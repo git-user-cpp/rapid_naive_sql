@@ -46,54 +46,54 @@ impl Table {
 
     //TODO: implement all these functions
     fn generate_unique_id() {
-        //TODO: implement
+        todo!()
     }
 
     fn verify_id() {
-        //TODO: implement
+        todo!()
     }
 
     fn verify_field() {
-        //TODO: implement
+        todo!()
     }
 
     fn verify_rows() {
-        //TODO: implement
+        todo!()
     }
 
     fn verify_column_names_correct() {
-        //TODO: implement
+        todo!()
     }
 
     fn verify_id_and_field() {
-        //TODO: implement
+        todo!()
     }
 
     fn verify_id_and_columns() {
-        //TODO: implement
+        todo!()
     }
 
     pub fn row_is_empty() {
-        //TODO: implement
+        todo!()
     }
 
     pub fn get_field_value() {
-        //TODO: implement
+        todo!()
     }
 
     pub fn add_row() {
-        //TODO: implement
+        todo!()
     }
 
     pub fn return_row() {
-        //TODO: implement
+        todo!()
     }
 
     pub fn remove_row() {
-        //TODO: implement
+        todo!()
     }
 
     pub fn update_row_field_values() {
-        //TODO: implement
+        todo!()
     }
 }
