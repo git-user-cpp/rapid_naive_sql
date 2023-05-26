@@ -37,10 +37,10 @@ impl DataHandler {
     }
 
     pub fn create_new_table() {
-        //TODO: implement
+        todo!()
     }
 
     pub fn insert_into_table() {
-        //TODO: implement
+        todo!()
     }
 }
