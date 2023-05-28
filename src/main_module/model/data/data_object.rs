@@ -22,5 +22,17 @@
  * SOFTWARE.
  */
 
-pub mod controller;
-pub mod model;
+#[derive(Debug)]
+pub struct DataObject {
+    field_name: String,
+    value: String,
+}
+
+impl DataObject {
+    pub fn new(field_name: &str, field_value: &str) -> Self {
+        DataObject {
+            field_name: String::from(field_name),
+            value: String::from(field_value),
+        }
+    }
+}

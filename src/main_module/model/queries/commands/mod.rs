@@ -21,19 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
-#[derive(Debug)]
-pub struct DataObject {
-    field_name: String,
-    value: String,
-}
-
-impl DataObject {
-    pub fn new(field_name: &str, field_value: &str) -> Self {
-        DataObject {
-            field_name: String::from(field_name),
-            value: String::from(field_value),
-        }
-    }
-}
-
+pub mod abstract_command;
+pub mod create_table_command;
+pub mod insert_into_command;
+pub mod querry_command;
