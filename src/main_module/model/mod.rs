@@ -21,6 +21,5 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
-pub mod controller;
-pub mod model;
+pub mod data;
+pub mod queries;

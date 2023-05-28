@@ -24,7 +24,7 @@
 
 use std::collections::{HashMap, HashSet};
 
-use crate::DataObject;
+use crate::main_module::model::data::data_object::DataObject;
 
 pub struct Table {
     error_id: String,

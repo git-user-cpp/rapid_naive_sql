@@ -22,5 +22,26 @@
  * SOFTWARE.
  */
 
-pub mod controller;
-pub mod model;
+use std::collections::HashMap;
+
+use crate::main_module::model::data::table::Table;
+
+pub struct DataHandler {
+    tables: HashMap<String, Table>,
+}
+
+impl DataHandler {
+    pub fn new() -> Self {
+        DataHandler {
+            tables: HashMap::new(),
+        }
+    }
+
+    pub fn create_new_table() {
+        todo!()
+    }
+
+    pub fn insert_into_table() {
+        todo!()
+    }
+}

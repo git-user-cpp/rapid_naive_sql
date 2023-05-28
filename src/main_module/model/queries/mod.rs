@@ -22,5 +22,8 @@
  * SOFTWARE.
  */
 
-pub mod controller;
-pub mod model;
+pub mod commands;
+pub mod query;
+pub mod query_element;
+pub mod query_entity;
+pub mod query_keyword;
