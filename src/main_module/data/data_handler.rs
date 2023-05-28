@@ -23,6 +23,7 @@
  */
 
 use std::collections::HashMap;
+
 use crate::main_module::data::table::Table;
 
 pub struct DataHandler {
