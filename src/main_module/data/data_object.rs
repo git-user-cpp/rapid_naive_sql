@@ -23,13 +23,12 @@
  */
 
 #[derive(Debug)]
-
 pub struct DataObject {
     field_name: String,
     value: String,
 }
 
-impl DataObject{
+impl DataObject {
     pub fn new(field_name: &str, field_value: &str) -> Self {
         DataObject {
             field_name: String::from(field_name),

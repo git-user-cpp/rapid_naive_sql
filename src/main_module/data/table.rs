@@ -22,7 +22,8 @@
  * SOFTWARE.
  */
 
-use std::collections::{HashSet, HashMap};
+use std::collections::{HashMap, HashSet};
+
 use crate::DataObject;
 
 pub struct Table {
