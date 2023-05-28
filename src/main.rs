@@ -27,6 +27,6 @@ use crate::main_module::model::data::data_object::DataObject;
 pub mod main_module;
 
 fn main() {
-    let new_obj = DataObject::new("name", "Oleg");
-    println!("{:?}", new_obj);
+	let new_obj = DataObject::new("name", "Oleg");
+	println!("{:?}", new_obj);
 }

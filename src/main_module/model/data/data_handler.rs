@@ -22,26 +22,26 @@
  * SOFTWARE.
  */
 
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 
 use crate::main_module::model::data::table::Table;
 
 pub struct DataHandler {
-    tables: HashMap<String, Table>,
+	tables: HashMap<String, Table>,
 }
 
 impl DataHandler {
-    pub fn new() -> Self {
-        DataHandler {
-            tables: HashMap::new(),
-        }
-    }
+	pub fn new() -> Self {
+		DataHandler {
+			tables: HashMap::new(),
+		}
+	}
 
-    pub fn create_new_table() {
-        todo!()
-    }
+	pub fn create_new_table(str: &str, set: HashSet<String>) {
+		todo!()
+	}
 
-    pub fn insert_into_table() {
-        todo!()
-    }
+	pub fn insert_into_table() {
+		todo!()
+	}
 }

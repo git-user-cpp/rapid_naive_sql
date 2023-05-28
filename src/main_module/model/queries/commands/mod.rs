@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-pub mod abstract_command;
+
 pub mod create_table_command;
 pub mod insert_into_command;
 pub mod querry_command;

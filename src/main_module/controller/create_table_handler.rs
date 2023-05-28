@@ -25,13 +25,13 @@
 use crate::main_module::model::data::data_handler::DataHandler;
 
 pub struct CreateTableHandler {
-    data_handler: DataHandler,
+	data_handler: DataHandler,
 }
 
 impl CreateTableHandler {
-    pub fn new() -> Self {
-        let data_handler = DataHandler::new();
+	pub fn new() -> Self {
+		let data_handler = DataHandler::new();
 
-        CreateTableHandler { data_handler }
-    }
+		CreateTableHandler { data_handler }
+	}
 }
