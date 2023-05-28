@@ -21,3 +21,13 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
+use crate::main_module::model::queries::commands::querry_command::QueryCommand;
+
+pub struct InsertIntoCommand {}
+
+impl QueryCommand for InsertIntoCommand {
+	fn execute_command(command_line: String) {
+		todo!()
+	}
+}

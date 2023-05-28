@@ -27,74 +27,73 @@ use std::collections::{HashMap, HashSet};
 use crate::main_module::model::data::data_object::DataObject;
 
 pub struct Table {
-    error_id: String,
-    error_arg: String,
-    error_rws: String,
-    column_names: HashSet<String>,
-    rows: HashMap<String, Vec<DataObject>>,
+	error_id: String,
+	error_arg: String,
+	error_rws: String,
+	column_names: HashSet<String>,
+	rows: HashMap<String, Vec<DataObject>>,
 }
 
 impl Table {
-    pub fn new() -> Self {
-        Table {
-            error_id: String::from("[ERROR] [Incorrect ID]"),
-            error_arg: String::from("[ERROR] [Incorrect rows in insert data package"),
-            error_rws: String::from("[ERROR] [Trying to reach an empty row]"),
-            column_names: HashSet::new(),
-            rows: HashMap::new(),
-        }
-    }
+	pub fn new() -> Self {
+		Table {
+			error_id: String::from("[ERROR] [Incorrect ID]"),
+			error_arg: String::from("[ERROR] [Incorrect rows in insert data package"),
+			error_rws: String::from("[ERROR] [Trying to reach an empty row]"),
+			column_names: HashSet::new(),
+			rows: HashMap::new(),
+		}
+	}
 
-    //TODO: implement all these functions
-    fn generate_unique_id() {
-        todo!()
-    }
+	fn generate_unique_id() {
+		todo!()
+	}
 
-    fn verify_id() {
-        todo!()
-    }
+	fn verify_id() {
+		todo!()
+	}
 
-    fn verify_field() {
-        todo!()
-    }
+	fn verify_field() {
+		todo!()
+	}
 
-    fn verify_rows() {
-        todo!()
-    }
+	fn verify_rows() {
+		todo!()
+	}
 
-    fn verify_column_names_correct() {
-        todo!()
-    }
+	fn verify_column_names_correct() {
+		todo!()
+	}
 
-    fn verify_id_and_field() {
-        todo!()
-    }
+	fn verify_id_and_field() {
+		todo!()
+	}
 
-    fn verify_id_and_columns() {
-        todo!()
-    }
+	fn verify_id_and_columns() {
+		todo!()
+	}
 
-    pub fn row_is_empty() {
-        todo!()
-    }
+	pub fn row_is_empty() {
+		todo!()
+	}
 
-    pub fn get_field_value() {
-        todo!()
-    }
+	pub fn get_field_value() {
+		todo!()
+	}
 
-    pub fn add_row() {
-        todo!()
-    }
+	pub fn add_row() {
+		todo!()
+	}
 
-    pub fn return_row() {
-        todo!()
-    }
+	pub fn return_row() {
+		todo!()
+	}
 
-    pub fn remove_row() {
-        todo!()
-    }
+	pub fn remove_row() {
+		todo!()
+	}
 
-    pub fn update_row_field_values() {
-        todo!()
-    }
+	pub fn update_row_field_values() {
+		todo!()
+	}
 }

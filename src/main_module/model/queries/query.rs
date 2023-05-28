@@ -21,3 +21,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
+use crate::main_module::model::queries::query_element::QueryElement;
+
+pub struct Query {
+	query_elements: Vec<QueryElement>,
+}
