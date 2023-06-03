@@ -22,7 +22,46 @@
  * SOFTWARE.
  */
 
-pub mod data_handler;
-pub mod data_object;
-pub mod table;
-pub mod table_row;
+use crate::main_module::model::data::data_object::DataObject;
+
+pub struct TableRow {
+	incorrect_field_name: String,
+	fields: Vec<DataObject>,
+}
+
+impl TableRow {
+	pub fn new(fields: Vec<DataObject>) -> Self {
+		TableRow {
+			incorrect_field_name: String::from("[ERROR] [Incorrect field name]"),
+			fields,
+		}
+	}
+
+	pub fn add_field(data_object: DataObject) {
+		todo!()
+	}
+
+	pub fn insert_field(data_object: DataObject) {
+		todo!()
+	}
+
+	pub fn remove_field(field: String) {
+		todo!()
+	}
+
+	pub fn remove_field_value(field: String) {
+		todo!()
+	}
+
+	pub fn get_field_data_obj(field: String) {
+		todo!()
+	}
+
+	pub fn replace_existing_obj_value(current: DataObject, new: DataObject) {
+		todo!()
+	}
+
+	fn find_data_obj(field: String) {
+		todo!()
+	}
+}
