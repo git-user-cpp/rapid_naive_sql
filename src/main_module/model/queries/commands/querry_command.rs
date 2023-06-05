@@ -23,5 +23,5 @@
  */
 
 pub trait QueryCommand {
-	fn execute_command(command_line: String);
+    fn execute_command(command_line: String);
 }

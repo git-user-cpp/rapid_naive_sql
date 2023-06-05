@@ -23,5 +23,5 @@
  */
 
 pub struct QueryElement {
-	query_composition: Vec<QueryElement>,
+    query_composition: Vec<QueryElement>,
 }

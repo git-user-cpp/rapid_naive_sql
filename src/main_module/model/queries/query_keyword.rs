@@ -23,9 +23,9 @@
  */
 
 pub enum QueryKeyword {
-	CREATE_TABLE,
-	SELECT,
-	UPDATE,
-	DELETE,
-	INSERT_INTO,
+    CREATE_TABLE,
+    SELECT,
+    UPDATE,
+    DELETE,
+    INSERT_INTO,
 }
