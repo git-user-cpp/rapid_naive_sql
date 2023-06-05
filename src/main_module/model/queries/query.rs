@@ -25,5 +25,5 @@
 use crate::main_module::model::queries::query_element::QueryElement;
 
 pub struct Query {
-	query_elements: Vec<QueryElement>,
+    query_elements: Vec<QueryElement>,
 }

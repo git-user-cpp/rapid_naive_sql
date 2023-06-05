@@ -27,7 +27,7 @@ use crate::main_module::model::queries::commands::querry_command::QueryCommand;
 pub struct InsertIntoCommand {}
 
 impl QueryCommand for InsertIntoCommand {
-	fn execute_command(command_line: String) {
-		todo!()
-	}
+    fn execute_command(command_line: String) {
+        todo!()
+    }
 }
