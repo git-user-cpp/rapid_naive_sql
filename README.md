@@ -4,23 +4,13 @@ NaiveSQL implemented in Rust.
 Java version: https://github.com/VladimirPetrat/NaiveSQL
 
 ---
-![GitHub all releases](https://img.shields.io/github/downloads/git-user-cpp/RapidNaiveSQL/total?color=00FF00&logo=GitHub&logoColor=00FF00&style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/git-user-cpp/RapidNaiveSQL?color=FFFF00&logo=github&logoColor=FFFF00&style=plastic)
+![GitHub all releases](https://img.shields.io/github/downloads/git-user-cpp/rapid_naive_sql/total?color=00FF00&label=Downloads&logo=GitHub&logoColor=00FF00&style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/git-user-cpp/rapid_naive_sql?color=FFFF00&label=Stars&logo=GitHub&logoColor=FFFF00&style=for-the-badge) 
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/git-user-cpp/RapidNaiveSQL?color=ff0000&logo=github&logoColor=ff0000&style=plastic)
-![GitHub Release Date](https://img.shields.io/github/release-date/git-user-cpp/RapidNaiveSQL?color=ff4500&logo=github&logoColor=ff4500&style=plastic)
-![GitHub](https://img.shields.io/github/license/git-user-cpp/RapidNaiveSQL?color=FFD700&logo=github&logoColor=FFD700&style=plastic)
-![GitHub language count](https://img.shields.io/github/languages/count/git-user-cpp/RapidNaiveSQL?color=7FFFD4&logo=github&logoColor=7FFFD4&style=plastic)
-![GitHub top language](https://img.shields.io/github/languages/top/git-user-cpp/RapidNaiveSQL?color=red&logo=github&logoColor=red&style=plastic)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/git-user-cpp/RapidNaiveSQL?color=00BFFF&logo=github&logoColor=00BFFF&style=plastic)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/git-user-cpp/rapid_naive_sql?color=ff0000&label=Release&logo=GitHub&logoColor=ff0000&style=for-the-badge) ![GitHub Release Date](https://img.shields.io/github/release-date/git-user-cpp/rapid_naive_sql?color=ff4500&label=Release%20date&logo=GitHub&logoColor=ff4500&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/git-user-cpp/rapid_naive_sql?color=FFD700&label=License&logo=GitHub&logoColor=FFD700&style=for-the-badge) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/git-user-cpp/rapid_naive_sql?color=00BFFF&label=Code%20size&logo=GitHub&logoColor=00BFFF&style=for-the-badge) 
 
-![GitHub contributors](https://img.shields.io/github/contributors-anon/git-user-cpp/RapidNaiveSQL?color=ff0000&logo=github&logoColor=ff0000&style=plastic)
-![GitHub watchers](https://img.shields.io/github/watchers/git-user-cpp/RapidNaiveSQL?color=DC143C&logo=github&logoColor=DC143C&style=plastic)
-![GitHub followers](https://img.shields.io/github/followers/git-user-cpp?color=7FFF00&logo=github&logoColor=7FFF00&style=plastic)
-![GitHub Sponsors](https://img.shields.io/github/sponsors/git-user-cpp?color=00FFFF&logo=github&logoColor=00FFFF&style=plastic)
+![GitHub contributors](https://img.shields.io/github/contributors-anon/git-user-cpp/rapid_naive_sql?color=ff0000&label=Contributors&logo=GitHub&logoColor=ff0000&style=for-the-badge) ![GitHub watchers](https://img.shields.io/github/watchers/git-user-cpp/rapid_naive_sql?color=DC143C&label=Watchers&logo=GitHub&logoColor=DC143C&style=for-the-badge) ![GitHub Sponsors](https://img.shields.io/github/sponsors/git-user-cpp?color=00FFFF&label=Sponsors&logo=GitHub&logoColor=00FFFF&style=for-the-badge)
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/git-user-cpp/RapidNaiveSQL?color=98FB98&logo=github&logoColor=98FB98&style=plastic)
-![GitHub last commit](https://img.shields.io/github/last-commit/git-user-cpp/RapidNaiveSQL?color=98FB98&logo=github&logoColor=98FB98&style=plastic)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/git-user-cpp/rapid_naive_sql?color=98FB98&label=Commit%20activity&logo=GitHub&logoColor=98FB98&style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/git-user-cpp/rapid_naive_sql?color=98FB98&label=Last%20commit&logo=GitHub&logoColor=98FB98&style=for-the-badge)
 
 ---
 
