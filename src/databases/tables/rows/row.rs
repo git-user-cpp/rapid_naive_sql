@@ -15,3 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
+
+pub struct Row {
+    columns: Vec<String>,
+}
+
+impl Row {
+    pub fn new(id: u32, columns: Vec<String>) -> Self {
+        Self {
+            columns,
+        }
+    }
+}

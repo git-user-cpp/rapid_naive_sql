@@ -15,3 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
+
+use super::tables::table::Table;
+
+struct Database {
+    tables: Vec<Table>,
+}
+
+impl Database {
+    pub fn new(tables: Vec<Table>) -> Self {
+        Self {
+            tables
+        }
+    }
+}

@@ -16,4 +16,19 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-pub(crate) mod databases;
+use std::collections::HashMap;
+use crate::databases::tables::rows::row::Row;
+
+pub struct Table {
+    name: String,
+    rows: HashMap<u32, Row>,
+}
+
+impl Table {
+    pub fn new(name: String, rows: HashMap<u32, Row>) -> Self {
+        Self {
+            name,
+            rows,
+        }
+    }
+}
