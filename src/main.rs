@@ -16,11 +16,6 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-use crate::main_module::model::data::data_object::DataObject;
-
-pub mod main_module;
-
 fn main() {
-    let new_obj = DataObject::new("name", "Oleg");
-    println!("{:?}", new_obj);
+   println!("database"); 
 }
