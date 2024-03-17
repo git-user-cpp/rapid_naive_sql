@@ -17,3 +17,14 @@
  */
 
 pub(crate) mod databases;
+use crate::databases::database::Database;
+
+struct RNSQL {
+    databases: Vec<Database>,
+}
+
+impl RNSQL {
+    pub fn new() {
+        todo!()
+    }
+}

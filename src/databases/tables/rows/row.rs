@@ -17,13 +17,30 @@
  */
 
 pub struct Row {
+    primary_key: u32,
     columns: Vec<String>,
 }
 
 impl Row {
-    pub fn new(id: u32, columns: Vec<String>) -> Self {
+    pub fn create_row(primary_key: u32, columns: Vec<String>) -> Self {
         Self {
+            primary_key,
             columns,
         }
+    }
+    
+    pub fn create_row_without_columns(primary_key: u32) -> Self {
+        Self {
+            primary_key,
+            columns: Vec::new(),
+        }
+    }
+
+    pub fn create_column(&mut self, primary_key: u32, name: String) {
+        todo!()
+    }
+
+    pub fn delete_column(&mut self, name: String) {
+        todo!()
     }
 }

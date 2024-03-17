@@ -25,10 +25,21 @@ pub struct Table {
 }
 
 impl Table {
-    pub fn new(name: String, rows: HashMap<u32, Row>) -> Self {
+    pub fn create_table(name: String, rows: HashMap<u32, Row>) -> Self {
         Self {
             name,
             rows,
         }
+    }
+
+    pub fn create_table_without_rows(name: String) -> Self {
+        Self {
+            name,
+            rows: HashMap::new(),
+        }
+    }
+
+    pub fn delete_row(&mut self, primary_key: u32) {
+        todo!()
     }
 }
