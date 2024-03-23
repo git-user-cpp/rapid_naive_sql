@@ -18,27 +18,32 @@
 
 use super::tables::table::Table;
 
+#[derive(Debug)]
 pub struct Database {
-    name: String,
-    tables: Vec<Table>,
+    pub name: String,
+    pub tables: Vec<Table>,
 }
 
 impl Database {
-    pub fn create_database(name: String, tables: Vec<Table>) -> Self {
-        Self {
-            name,
-            tables,
-        }
-    }
-
-    pub fn create_database_without_tables(name: String) -> Self {
+    pub fn create_database(name: String) -> Self {
         Self {
             name,
             tables: Vec::new(),
         }
     }
 
+    pub fn add_table(&mut self, name: String) {
+        self.tables.push(Table::create_table(name));
+    }
+
     pub fn delete_table(&mut self, name: String) {
-        todo!()
+        let mut ind = 0;
+        while ind != self.tables.len() {
+            if self.tables[ind].name == name {
+                self.tables.remove(ind);
+            } else {
+                ind += 1;
+            }
+        }
     }
 }

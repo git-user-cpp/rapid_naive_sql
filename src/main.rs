@@ -15,7 +15,42 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-
+use rapid_naive_sql::RNSQL;
+ 
 fn main() {
-   println!("database"); 
+   let mut project = RNSQL::new();
+
+   println!("{:#?}\n\n", project);
+
+   project.add_database(String::from("db1"));
+
+   println!("{:#?}\n\n", project);
+
+   project.databases[0].add_table(String::from("tb1"));
+
+   println!("{:#?}\n\n", project);
+
+   project.databases[0].tables[0].add_row(1);
+
+   println!("{:#?}\n\n", project);
+
+   project.databases[0].tables[0].rows[0].create_column(String::from("name"));
+
+   println!("{:#?}\n\n", project);
+
+   project.databases[0].tables[0].rows[0].delete_column(String::from("name"));
+
+   println!("{:#?}\n\n", project);
+
+   project.databases[0].tables[0].delete_row(1);
+
+   println!("{:#?}\n\n", project);
+
+   project.databases[0].delete_table(String::from("tb1"));
+
+   println!("{:#?}\n\n", project);
+
+   project.delete_database(String::from("db1"));
+
+   println!("{:#?}", project);
 }
