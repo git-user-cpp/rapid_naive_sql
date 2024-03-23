@@ -19,12 +19,30 @@
 pub(crate) mod databases;
 use crate::databases::database::Database;
 
-struct RNSQL {
-    databases: Vec<Database>,
+#[derive(Debug)]
+pub struct RNSQL {
+    pub databases: Vec<Database>,
 }
 
 impl RNSQL {
-    pub fn new() {
-        todo!()
+    pub fn new() -> Self {
+        Self {
+            databases: Vec::new(),
+        }
+    }
+
+    pub fn add_database(&mut self, name: String) {
+        self.databases.push(Database::create_database(name));
+    }
+
+    pub fn delete_database(&mut self, name: String) {
+        let mut ind = 0;
+        while ind != self.databases.len() {
+            if self.databases[ind].name == name {
+                self.databases.remove(ind);
+            } else {
+                ind += 1;
+            }
+        }
     }
 }

@@ -16,31 +16,32 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+#[derive(Debug)]
 pub struct Row {
-    primary_key: u32,
-    columns: Vec<String>,
+    pub primary_key: u32,
+    pub columns: Vec<String>,
 }
 
 impl Row {
-    pub fn create_row(primary_key: u32, columns: Vec<String>) -> Self {
-        Self {
-            primary_key,
-            columns,
-        }
-    }
-    
-    pub fn create_row_without_columns(primary_key: u32) -> Self {
+    pub fn create_row(primary_key: u32) -> Self {
         Self {
             primary_key,
             columns: Vec::new(),
         }
     }
 
-    pub fn create_column(&mut self, primary_key: u32, name: String) {
-        todo!()
+    pub fn create_column(&mut self, name: String) {
+        self.columns.push(name);
     }
 
     pub fn delete_column(&mut self, name: String) {
-        todo!()
+        let mut ind = 0;
+        while ind != self.columns.len() {
+            if self.columns[ind] == name {
+                self.columns.remove(ind);
+            } else {
+                ind += 1;
+            }
+        }
     }
 }
