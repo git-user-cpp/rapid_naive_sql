@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-use crate::databases::tables::rows::row::Row;
+use crate::data::databases::tables::rows::row::Row;
 
 #[derive(Debug)]
 pub struct Table {

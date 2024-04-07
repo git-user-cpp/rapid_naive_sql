@@ -16,8 +16,8 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-pub(crate) mod databases;
-use crate::databases::database::Database;
+pub(crate) mod data;
+use crate::data::databases::database::Database;
 
 #[derive(Debug)]
 pub struct RNSQL {
