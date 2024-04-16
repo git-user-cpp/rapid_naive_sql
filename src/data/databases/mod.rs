@@ -16,5 +16,5 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-pub(crate) mod database;
-pub(crate) mod tables;
+pub mod database;
+pub mod tables;

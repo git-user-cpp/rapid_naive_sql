@@ -16,33 +16,28 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-pub(crate) mod data;
+pub mod data;
+use std::collections::HashMap;
+
 use crate::data::databases::database::Database;
 
 #[derive(Debug)]
-pub struct RNSQL {
-    pub databases: Vec<Database>,
+pub struct RNSQL<Value> {
+    pub databases: HashMap<String, Database<Value>>,
 }
 
-impl RNSQL {
+impl<Value> RNSQL<Value> {
     pub fn new() -> Self {
         Self {
-            databases: Vec::new(),
+            databases: HashMap::new(),
         }
     }
 
-    pub fn add_database(&mut self, name: String) {
-        self.databases.push(Database::create_database(name));
+    pub fn add_database(&mut self, name: &str, database: Database<Value>) {
+        self.databases.insert(name.to_string(), database);
     }
 
-    pub fn delete_database(&mut self, name: String) {
-        let mut ind = 0;
-        while ind != self.databases.len() {
-            if self.databases[ind].name == name {
-                self.databases.remove(ind);
-            } else {
-                ind += 1;
-            }
-        }
+    pub fn delete_database(&mut self, name: &str) {
+        self.databases.remove(name);
     }
 }

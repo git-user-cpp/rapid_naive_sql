@@ -16,32 +16,25 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+use std::collections::HashMap;
+
 #[derive(Debug)]
-pub struct Row {
-    pub primary_key: u32,
-    pub columns: Vec<String>,
+pub struct Row<Value> {
+    pub columns: HashMap<String, Value>,
 }
 
-impl Row {
-    pub fn create_row(primary_key: u32) -> Self {
+impl<Value> Row<Value> {
+    pub fn create_row() -> Self {
         Self {
-            primary_key,
-            columns: Vec::new(),
+            columns: HashMap::new(),
         }
     }
 
-    pub fn create_column(&mut self, name: String) {
-        self.columns.push(name);
+    pub fn create_column(&mut self, name: &str, value: Value) {
+        self.columns.insert(name.to_string(), value);
     }
 
-    pub fn delete_column(&mut self, name: String) {
-        let mut ind = 0;
-        while ind != self.columns.len() {
-            if self.columns[ind] == name {
-                self.columns.remove(ind);
-            } else {
-                ind += 1;
-            }
-        }
+    pub fn delete_column(&mut self, name: &str) {
+        self.columns.remove(name);
     }
 }
