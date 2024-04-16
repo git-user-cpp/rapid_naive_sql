@@ -16,34 +16,26 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+use std::collections::HashMap;
 use crate::data::databases::tables::rows::row::Row;
 
 #[derive(Debug)]
-pub struct Table {
-    pub name: String,
-    pub rows: Vec<Row>,
+pub struct Table<Value> {
+    pub rows: HashMap<u32, Row<Value>>,
 }
 
-impl Table {
-    pub fn create_table(name: String) -> Self {
+impl<Value> Table<Value> {
+    pub fn create_table() -> Self {
         Self {
-            name,
-            rows: Vec::new(),
+            rows: HashMap::new(),
         }
     }
 
-    pub fn add_row(&mut self, primary_key: u32) {
-        self.rows.push(Row::create_row(primary_key));
+    pub fn add_row(&mut self, primary_key: u32, row: Row<Value>) {
+        self.rows.insert(primary_key, row);
     }
 
     pub fn delete_row(&mut self, primary_key: u32) {
-        let mut ind = 0;
-        while ind != self.rows.len() {
-            if self.rows[ind].primary_key == primary_key {
-                self.rows.remove(ind);
-            } else {
-                ind += 1;
-            }
-        }
+        self.rows.remove(&primary_key);
     }
 }

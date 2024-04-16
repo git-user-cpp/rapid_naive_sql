@@ -15,42 +15,78 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
+
 use rapid_naive_sql::RNSQL;
- 
+use rapid_naive_sql::data::databases::database::Database;
+use rapid_naive_sql::data::databases::tables::table::Table;
+use rapid_naive_sql::data::databases::tables::rows::row::Row;
+
 fn main() {
+   const DB_NAME: &str = "db1";
+   const TB_NAME: &str = "tb1";
+   const RW_NAME: u32 = 1;
+   const CL_NAME: &str = "cl1";
+
    let mut project = RNSQL::new();
 
    println!("{:#?}\n\n", project);
 
-   project.add_database(String::from("db1"));
+   let db1 = Database::create_database();
+   project.add_database(DB_NAME, db1);
 
    println!("{:#?}\n\n", project);
 
-   project.databases[0].add_table(String::from("tb1"));
+   if let Some(database) = project.databases.get_mut(DB_NAME) {
+      let tb1 = Table::create_table();
+      database.add_table(TB_NAME, tb1);
+   }
 
    println!("{:#?}\n\n", project);
 
-   project.databases[0].tables[0].add_row(1);
+   if let Some(database) = project.databases.get_mut(DB_NAME) {
+      if let Some(table) = database.tables.get_mut(TB_NAME) {
+         let rw1 = Row::create_row();
+         table.add_row(RW_NAME, rw1);
+      }
+   }
 
    println!("{:#?}\n\n", project);
 
-   project.databases[0].tables[0].rows[0].create_column(String::from("name"));
+   if let Some(database) = project.databases.get_mut(DB_NAME) {
+      if let Some(table) = database.tables.get_mut(TB_NAME) {
+         if let Some(row) = table.rows.get_mut(&RW_NAME) {
+            row.create_column(CL_NAME, String::from("hello"));
+         }
+      }
+   }
 
    println!("{:#?}\n\n", project);
 
-   project.databases[0].tables[0].rows[0].delete_column(String::from("name"));
+   if let Some(database) = project.databases.get_mut(DB_NAME) {
+      if let Some(table) = database.tables.get_mut(TB_NAME) {
+         if let Some(row) = table.rows.get_mut(&RW_NAME) {
+            row.delete_column(CL_NAME);
+         }
+      }
+   }
 
    println!("{:#?}\n\n", project);
 
-   project.databases[0].tables[0].delete_row(1);
+   if let Some(database) = project.databases.get_mut(DB_NAME) {
+      if let Some(table) = database.tables.get_mut(TB_NAME) {
+         table.delete_row(RW_NAME);
+      }
+   }
 
    println!("{:#?}\n\n", project);
 
-   project.databases[0].delete_table(String::from("tb1"));
+   if let Some(database) = project.databases.get_mut(DB_NAME) {
+      database.delete_table(TB_NAME);
+   }
 
    println!("{:#?}\n\n", project);
 
-   project.delete_database(String::from("db1"));
+   project.delete_database(DB_NAME);
 
    println!("{:#?}", project);
 }

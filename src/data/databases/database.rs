@@ -16,34 +16,27 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+use std::collections::HashMap;
+
 use super::tables::table::Table;
 
 #[derive(Debug)]
-pub struct Database {
-    pub name: String,
-    pub tables: Vec<Table>,
+pub struct Database<Value> {
+    pub tables: HashMap<String, Table<Value>>,
 }
 
-impl Database {
-    pub fn create_database(name: String) -> Self {
+impl<Value> Database<Value> {
+    pub fn create_database() -> Self {
         Self {
-            name,
-            tables: Vec::new(),
+            tables: HashMap::new(),
         }
     }
 
-    pub fn add_table(&mut self, name: String) {
-        self.tables.push(Table::create_table(name));
+    pub fn add_table(&mut self, name: &str, table: Table<Value>) {
+        self.tables.insert(name.to_string(), table);
     }
 
-    pub fn delete_table(&mut self, name: String) {
-        let mut ind = 0;
-        while ind != self.tables.len() {
-            if self.tables[ind].name == name {
-                self.tables.remove(ind);
-            } else {
-                ind += 1;
-            }
-        }
+    pub fn delete_table(&mut self, name: &str) {
+        self.tables.remove(name);
     }
 }
