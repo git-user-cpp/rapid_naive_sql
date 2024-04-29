@@ -16,29 +16,4 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-pub mod data;
-pub mod functionality;
-use std::collections::HashMap;
-
-use crate::data::databases::database::Database;
-
-#[derive(Debug)]
-pub struct RNSQL<Value> {
-    pub databases: HashMap<String, Database<Value>>,
-}
-
-impl<Value> RNSQL<Value> {
-    pub fn new() -> Self {
-        Self {
-            databases: HashMap::new(),
-        }
-    }
-
-    pub fn add_database(&mut self, name: &str, database: Database<Value>) {
-        self.databases.insert(name.to_string(), database);
-    }
-
-    pub fn delete_database(&mut self, name: &str) {
-        self.databases.remove(name);
-    }
-}
+pub(crate) mod databases;
