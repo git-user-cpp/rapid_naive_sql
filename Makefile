@@ -6,9 +6,6 @@ help:
 clean: ## Clean the project using cargo
 	cargo clean
 
-build: ## Build the project using cargo
-	cargo build
-
 lint: ## Lint the project using cargo
 	cargo clippy
 
@@ -20,5 +17,17 @@ all: ## Use everything at once
 	cargo fmt
 	cargo build
 
+check: ## Check the project using cargo
+	cargo check
+	
+build: ## Build the project using cargo
+	cargo build
+	
+build-release: ## Build the release using cargo
+	cargo build --release
+
 run: ## Run the project
 	cargo run
+	
+run-release: ## Run the release project
+	cargo run --release
