@@ -8,6 +8,7 @@ Java version: https://github.com/VladimirPetrat/NaiveSQL
 ![rnsql_logo](images/small_logo.png)
 
 ---
+
 ![GitLab Release](https://img.shields.io/gitlab/v/release/git-user-cpp%2Frapid_naive_sql?display_name=release&date_order_by=released_at&style=flat-square&logo=gitlab)
 ![GitLab Stars](https://img.shields.io/gitlab/stars/git-user-cpp%2Frapid_naive_sql?style=flat-square&logo=gitlab)
 
